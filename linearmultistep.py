@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 10 18:02:21 2018
-
-@author: alexi
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul  9 09:33:35 2018
-
-@author: alexi
-"""
-
-#!C:\Users\alexi\Anaconda3\python.exe
-
-
 import re
 import matplotlib.pyplot as plt
 import numpy as np
@@ -55,12 +38,10 @@ def equ_parser(equation):
     # We have to detect exp() and trig functions now, will use np to eval
 
     # create a list with separated mathematical symbols
-    #symbols_detected = re.findall(r"[+/-]|\*+|\d+\.?\d*|\w", right)
     symbols_detected = re.findall(r"pi|sin\([^)]*\)|exp\([^)]*\)|cos\([^)]*\)|tan\([^)]*\)|[+/-]|\*+|\d+\.?\d*|\w", right)
 
 
     maths_symbols = ['+', '-', '/', '*', '**']
-    #maths_ops = ['sin', 'cos', 'tan', 'exp']
 
     new_list = []
     
@@ -277,7 +258,6 @@ def eulers_method():
     plt.title(plot_title)
     plt.show()
 
-    #return print(str(round(y, 4)), 'for step size', steps)
 
 
 eulers_method()
