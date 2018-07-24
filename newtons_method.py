@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 24 17:23:10 2018
-
-@author: alexi
-"""
-
 def function(x):
     """
     Write down your function for Newton's method, such as f(x) = x**2 - 16
@@ -51,6 +44,3 @@ def newtons_method(function, derivative, initial_value):
         guess = new_guess
 
         print(f'At step {step} your value is {round(new_guess,len(str(epsilon)))}')
-
-
-
